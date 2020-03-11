@@ -1,0 +1,8 @@
+<h1>Titles</h1>
+    <ol>
+        <% @blogs.each do |blog| %>
+            <li> <%= link_to blog.title, one_blog_path(blog) %></li>
+        <% end %>
+    </ol>
+
+<button><%= link_to 'Create a new blog post', new_blog_path %></button>
